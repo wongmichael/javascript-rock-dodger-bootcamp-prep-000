@@ -92,13 +92,14 @@ function createRock(x) {
      */
      if (rock.style.bottom!=0){
        rock.style.bottom += 2
-       moveRock()
+       //moveRock()
+       window.requestAnimationFrame(moveRock)
      } else{
 //<<<<<<< HEAD
        //document.removeChild(rock)
        GAME.removeChild(rock)
 //=======
-       document.removeChild(rock)
+       //document.removeChild(rock)
 //>>>>>>> 6b0fee4a9d66781a0fb0cfb8386d0be06dcb4949
      }
 
@@ -110,7 +111,7 @@ function createRock(x) {
 
   // We should kick of the animation of the rock around here
 //<<<<<<< HEAD
-  window.requestAnimationFrame(moveRock)
+  //window.requestAnimationFrame(moveRock)
 //=======
   //window.requestAnimationFrame()
 //>>>>>>> 6b0fee4a9d66781a0fb0cfb8386d0be06dcb4949
