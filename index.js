@@ -216,20 +216,23 @@ function moveDodgerRight() {
 //<<<<<<< HEAD
    //window.requestAnimationFrame(DODGER.style.right+=4)
    //window.requestAnimationFrame()
-   var amt = 0
+   //var amt = 0
    var left = positionToInteger(DODGER.style.left)
-   function step(){
-     DODGER.style.left = `${left+=1}px`
-     amt++
-     if (amt<4) {
-       window.requestAnimationFrame(step)
-     }
-   }
-   if (left != 360) {
-     window.requestAnimationFrame(step)
-   }
+   window.requestAnimationFrame(function(){
+     DODGER.style.left = `${left+=4}px`
+   })
+   //function step(){
+     //DODGER.style.left = `${left+=1}px`
+     //amt++
+     //if (amt<4) {
+       //window.requestAnimationFrame(step)
+     //}
+   //}
+   //if (left != 360) {
+     //window.requestAnimationFrame(step)
+   //}
 //=======
-   window.requestAnimationFrame(DODGER.style.right+=4)
+   //window.requestAnimationFrame(DODGER.style.right+=4)
 //>>>>>>> 6b0fee4a9d66781a0fb0cfb8386d0be06dcb4949
 }
 
